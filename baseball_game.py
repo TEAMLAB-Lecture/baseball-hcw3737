@@ -309,6 +309,8 @@ def main():
                                 print("Strikes : ",result[0]," Balls : ",result[1])
                             else :
                                 print("Wrond Input, Input again")
+                        else :
+                            break
     # ==================================
     print("Thank you for using this program")
     print("End of the Game")

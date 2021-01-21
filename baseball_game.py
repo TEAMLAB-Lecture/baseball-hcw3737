@@ -303,7 +303,7 @@ def main():
 
                 while(get_strikes_or_ball(user_input, random_number) != [3, 0]):
                         user_input = input('Input guess number : ')
-                        if user_input != 0 : 
+                        if user_input != '0' : 
                             if is_validated_number(user_input)==True:
                                 result = get_strikes_or_ball(user_input,random_number)
                                 print("Strikes : ",result[0]," Balls : ",result[1])
@@ -311,6 +311,8 @@ def main():
                                 print("Wrond Input, Input again")
                         else :
                             break
+            if user_input == '0':
+                break
     # ==================================
     print("Thank you for using this program")
     print("End of the Game")
